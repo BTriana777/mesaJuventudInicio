@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>MesaSubregional</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="">INICIO</a></li>
+            <li><a href="https://btriana777.github.io/mesaJuventudNosotros/">NOSOTROS</a></li>
+            <li><a href="">TALLERES</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <div id="particles-js"></div>
+    <div class="inicio">
+        <div class="contaImg">
+        </div>
+        <!-- <div class="wave2" style="height: 250px; overflow: hidden;"><svg viewBox="0 0 500 150"
+            preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M-17.77,26.16 C24.54,294.58 223.19,11.36 509.31,123.86 L500.00,0.00 L0.00,0.00 Z"
+            style="stroke: none; fill: #F2CF63;"></path>
+        </svg></div> -->
+    </div>
+    <div class="wave" style="height: 250px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-9.87,77.47 C242.94,210.70 220.93,11.36 509.31,122.88 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #f2f2f2;"></path></svg></div>
+    <div class="contenedor" id="contenedor">
+        <div class="contenedorCards">
+            <div class="card animation-card">
+                <img src="./assets/16409485_303.jpg" alt="">
+                <h1>TALLER 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates, quas magni adipisci porro
+                    architecto recusandae quis ipsa nihil est delectus provident asperiores modi! Ipsum, placeat
+                    cupiditate! Nesciunt, nemo natus.</p>
+                <div><span> click para mas</span></div>
+            </div>
+            <div class="card animation-card">
+                <img src="./assets/16409485_303.jpg" alt="">
+                <h1>TALLER 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates, quas magni adipisci porro
+                    architecto recusandae quis ipsa nihil est delectus provident asperiores modi! Ipsum, placeat
+                    cupiditate! Nesciunt, nemo natus.</p>
+                <div><span> click para mas</span></div>
+            </div>
+            <div class="card animation-card">
+                <img src="./assets/16409485_303.jpg" alt="">
+                <h1>TALLER 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates, quas magni adipisci porro
+                    architecto recusandae quis ipsa nihil est delectus provident asperiores modi! Ipsum, placeat
+                    cupiditate! Nesciunt, nemo natus.</p>
+                <div><span> click para mas</span></div>
+            </div>
+            <div class="card animation-card">
+                <img src="./assets/16409485_303.jpg" alt="">
+                <h1>TALLER 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates, quas magni adipisci porro
+                    architecto recusandae quis ipsa nihil est delectus provident asperiores modi! Ipsum, placeat
+                    cupiditate! Nesciunt, nemo natus.</p>
+                <div><span> click para mas</span></div>
+            </div>
+        </div>
+    </div>
+    <section id="contacto">
+        <footer>
+            <div class="footer-content">
+                <h3>MESA SUBREGIONAL DE JUVENTUDES DEL OCCIDENTE ANTIOQUEÑO</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab beatae cupiditate illo officiis id
+                    itaque
+                    voluptatum, ipsum quos dolores qui corrupti ducimus non architecto alias nobis consequatur tempore
+                    in
+                    at.</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/groups/146602972074104"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>designed by <span><a href="https://www.instagram.com/b_trianap/">Brandon Triana</a></span></p>
+            </div>
+        </footer>
+    </section>
+    <script src="./particles.min.js"></script>
+    <script src="./particlesjs-config.json"></script>
+    <script>let cards = document.querySelectorAll(".animation-card");
+        function animationCard() {
+            const scrollTop = 0;
+            for (let i = 0; i < cards.length; i++) {
+                let alturaCard = cards[i].offsetTop;
+                if (alturaCard - 1542 < scrollTop) {
+                    cards[i].style.opacity = 1;
+
+                }
+            }
+        }
+        window.addEventListener('scroll', animationCard);
+
+    </script>
+
+</body>
+
+</html>
